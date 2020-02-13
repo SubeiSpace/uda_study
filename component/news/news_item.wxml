@@ -1,0 +1,18 @@
+<view class="news">
+  <navigator url="/pages/details/details?id={{item.id}}">
+    <view class="news_detail">
+      <view class="news_right_content">
+         <view class="news_right_title">{{item.title}}</view>
+          <view class="news_right_desc">
+            <view class="news_right_source"> {{item.source}}</view>
+            <view class="news_right_date">{{item.date}}</view>
+          </view>
+      </view>
+
+      <image class="news_left_image" src="{{item.firstImage == '' ? defaultImage : item.firstImage}} "></image>
+    </view>
+  </navigator>
+
+  <view class="news_line"></view>
+</view>
+

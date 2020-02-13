@@ -1,0 +1,28 @@
+
+<!-- 新闻标题 -->
+<scroll-view scroll-x> 
+  <view class="news_tab">
+       <view class="news_item" wx:for="{{news_tab}}" wx:key="postion">
+          <view class="news_item_title" bindtap="tabOnClick" id="{{index}}"> {{item.title}} </view>
+          <view class="news_item_line" wx:if="{{currentTab == item.postion}}"></view>
+        </view>
+  </view>
+</scroll-view>
+
+<!--新闻内容-->
+<view class="news_content">
+
+  <!-- 默认使用第一个数据源做为banner-->
+  <view class="news_banner" >
+    <image class="banner_background" src="{{banner.firstImage}}"></image>
+    <view class="banner_desc">
+      <view class="banner_title"> {{banner.title}}</view>
+      <view class="banner_source">{{banner.source}}    {{banner.date}} </view>
+    </view>
+  </view>
+
+  <!-- 新闻列表 -->
+  <block wx:for="{{news_items}}" wx:key="index">
+    <news_item item="{{item}}" defaultImage="/images/gift.png"></news_item>
+  </block>
+</view>

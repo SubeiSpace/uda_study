@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "news_item": "../../component/news/news_item"
+  },
+  "enablePullDownRefresh": true
+  
+}

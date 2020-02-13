@@ -1,0 +1,20 @@
+<view>
+  <view class="detail-title">{{news_detail.title}}</view>
+
+  <view class="detail-desc">
+    <view class='detail-desc-right'>
+      <view class="detail-desc-source">{{news_detail.source}}</view>
+      <view class='detail-desc-date'>{{news_detail.date}}</view>
+    </view>
+    <view>浏览 {{news_detail.readCount}}</view>
+  </view>
+
+  <view class="detail-content" wx:for="{{news_detail.content}}" wx:key="index">
+    <block wx:if="{{item.type === 'image'}}">
+      <image class="deatil-content-image" src="{{item.src}}"></image>
+    </block>
+    <block wx:else>
+      <view class="detail-content-text">{{item.text}} </view>
+    </block>
+  </view>
+</view>

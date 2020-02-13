@@ -1,0 +1,68 @@
+/**index.wxss**/
+
+.news_tab{
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+}
+
+.news_item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 20rpx;
+}
+
+.news_item .news_item_title{
+  font-size: 36rpx;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  flex-shrink: 0;
+  color: white;
+  width: 150rpx;
+  background: #30C1DF;
+  height: 50rpx;
+  padding: 25rpx;
+  line-height: 42rpx;
+  text-align: center;
+}
+
+.news_item .news_item_line{
+  width: 20%;
+  height: 5rpx;
+  background: red;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 10rpx;
+}
+
+.news_banner{
+  margin: 20rpx;
+  height: 400rpx;
+  position: relative;
+  display: flex;
+  justify-content: center
+}
+
+.banner_background{
+  height: 400rpx;
+}
+
+.banner_desc{
+  position: absolute;
+  bottom: 0;
+  text-align: start;
+  left: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+.banner_title{
+  font-size: 36rpx;
+  color: white
+}
+
+.banner_source{
+  font-size: 32rpx;
+  color: red;
+  margin-top: 10rpx
+}
