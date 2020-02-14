@@ -17,7 +17,7 @@ const news_tab = [
   {
     postion: 2,
     title: "财经",
-    type: "cj1" //错误的type, 便于测试， 正确的type: cj
+    type: "cj"
   },
   {
     postion: 3,
